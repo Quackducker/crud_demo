@@ -31,7 +31,7 @@ Public Class Form1
                 End Using
             End Using
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
     End Sub
 End Class
