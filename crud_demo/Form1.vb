@@ -60,8 +60,8 @@ Public Class Form1
                     cmd.Parameters.AddWithValue("@name", TextBoxNmae.Text)
                     cmd.Parameters.AddWithValue("@age", CInt(TextBoxAge.Text))
                     cmd.Parameters.AddWithValue("@email", TextBoxEmail.Text)
+                    cmd.Parameters.AddWithValue("@id", CInt(TextBoxId.Text))
 
-                    cmd.Parameters.AddWithValue("@id", CInt(TextBoxID.Text))
                     Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
                     If rowsAffected > 0 Then
                         MessageBox.Show("Record updated successfully!")

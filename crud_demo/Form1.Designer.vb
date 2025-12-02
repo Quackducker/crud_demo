@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.ButtonConnect = New System.Windows.Forms.Button()
         Me.TextBoxNmae = New System.Windows.Forms.TextBox()
         Me.TextBoxAge = New System.Windows.Forms.TextBox()
@@ -160,7 +161,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBoxId)
@@ -177,7 +178,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBoxNmae)
         Me.Controls.Add(Me.ButtonConnect)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = resources.GetString("$this.Text")
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
